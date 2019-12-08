@@ -1,0 +1,112 @@
+.section {
+    background-color: $color-white-gray;
+    padding: 0 130px 68px 130px;
+
+    .section-title {
+        text-align: center;
+        padding: 42px 0 0 0;
+        margin: 0;
+    }
+
+    .section-item {
+        margin: 50px 0 0 0;
+        display: flex;
+        justify-content: center;
+        
+        .marg {
+            margin: 0 13px;
+        }
+
+        &__block {
+            position: relative;
+            height: 313px;
+            width: 384px;
+            background-repeat: no-repeat;
+
+            .section-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                opacity: 0.4;
+                transition: 0.5s;
+                background-color: $color-black;
+            }
+
+            .corner {
+                position: absolute;
+                right: 0;
+                border: 20px solid transparent; 
+                border-top: 20px solid $color-orange; 
+                border-right: 20px solid $color-orange;
+                transition: 0.5s;
+
+                .icon {
+                    position: absolute;
+                    top: -14px;
+                    right: -12px;
+                }
+            }
+
+            .block-description {
+                display: none;
+                width: 267px;
+                line-height: 1.105;
+                letter-spacing: 0.07rem;
+                font-size: 19px;
+                font-family: $font-brother;
+                position: absolute;
+                top: 42px;
+                left: 35px;
+            }
+
+            .block-title {
+                position: absolute;
+                width: 200px;
+                text-align: center;
+                font-size: 28px;
+                line-height: 1.105;
+                color: $color-white;
+                top: 132px;
+                left: 90px;
+            }
+
+            .block-button {
+                display: none;
+                font-size: 16px;
+                line-height: 1.25;
+                color: $color-white;
+                position: absolute;
+                right: 31px;
+                bottom: 28px;
+                padding: 11px 10px 14px 16px;
+                background-color: $color-black;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+
+        &__block:hover {
+
+            .section-overlay {
+                opacity: 0.78;
+                background-color: $color-orange;
+            }
+
+            .block-description,
+            .block-button {
+                display: block;
+            }
+
+            .block-title {
+                display: none;
+            }
+            
+            .corner {
+               border-top: 20px solid $color-black; 
+               border-right: 20px solid $color-black;
+            }
+        }
+    }
+}

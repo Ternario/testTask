@@ -1,0 +1,370 @@
+.section {
+  background-color: #EDEDED;
+  padding: 0 130px 68px 130px;
+}
+
+.section .section-title {
+  text-align: center;
+  padding: 42px 0 0 0;
+  margin: 0;
+}
+
+.section .section-item {
+  margin: 50px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section .section-item .marg {
+  margin: 0 13px;
+}
+
+.section .section-item__block {
+  position: relative;
+  height: 313px;
+  width: 384px;
+  background-repeat: no-repeat;
+}
+
+.section .section-item__block .section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.4;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #000000;
+}
+
+.section .section-item__block .corner {
+  position: absolute;
+  right: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid #EEAB05;
+  border-right: 20px solid #EEAB05;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section .section-item__block .corner .icon {
+  position: absolute;
+  top: -14px;
+  right: -12px;
+}
+
+.section .section-item__block .block-description {
+  display: none;
+  width: 267px;
+  line-height: 1.105;
+  letter-spacing: 0.07rem;
+  font-size: 19px;
+  font-family: "Brother";
+  position: absolute;
+  top: 42px;
+  left: 35px;
+}
+
+.section .section-item__block .block-title {
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.105;
+  color: #FFFFFF;
+  top: 132px;
+  left: 90px;
+}
+
+.section .section-item__block .block-button {
+  display: none;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #FFFFFF;
+  position: absolute;
+  right: 31px;
+  bottom: 28px;
+  padding: 11px 10px 14px 16px;
+  background-color: #000000;
+  border: none;
+  border-radius: 10px;
+}
+
+.section .section-item__block:hover .section-overlay {
+  opacity: 0.78;
+  background-color: #EEAB05;
+}
+
+.section .section-item__block:hover .block-description,
+.section .section-item__block:hover .block-button {
+  display: block;
+}
+
+.section .section-item__block:hover .block-title {
+  display: none;
+}
+
+.section .section-item__block:hover .corner {
+  border-top: 20px solid #000000;
+  border-right: 20px solid #000000;
+}
+
+.description {
+  text-align: center;
+  height: 396px;
+}
+
+.description .description-title {
+  padding: 54px 0 45px 0;
+  font-size: 35px;
+  font-family: "Myriad Pro";
+  color: #FFFFFF;
+  line-height: 0.571;
+  text-align: center;
+  margin: 0;
+}
+
+.description .description-info {
+  padding: 0 295px 45px 280px;
+  font-size: 19px;
+  font-family: "Myriad Pro";
+  color: #FFFFFF;
+  line-height: 1.053;
+  text-align: center;
+}
+
+.description .description-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 198px 0 252px;
+}
+
+.description .description-counter .marg {
+  padding: 0 196px 0 260px;
+}
+
+.description .description-counter__item .item-number {
+  padding: 0 0 11px 0;
+  font-size: 45px;
+  font-family: "Myriad Pro";
+  color: #EEAB05;
+  line-height: 0.667;
+  text-align: center;
+}
+
+.description .description-counter__item .item-info {
+  padding: 0 0 33px 0;
+  font-size: 20px;
+  font-family: "Myriad Pro";
+  color: #FFFFFF;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.description .description-btn {
+  padding: 8px 35px;
+  font-size: 16px;
+  font-family: "Brother";
+  color: #000000;
+  line-height: 1.25;
+  border: none;
+  border-radius: 5px;
+  background-color: #EEAB05;
+}
+
+body {
+  width: 1440px;
+}
+
+.header .header-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 130px;
+}
+
+.header .header-item__logo {
+  max-width: 271px;
+  padding: 0;
+  margin-right: 31px;
+}
+
+.header .header-item__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Brother";
+  padding: 40px 0 36px 0;
+  font-size: 15px;
+  letter-spacing: 0.036rem;
+}
+
+.header .header-item__navbar .nav-link {
+  padding: 0;
+  margin-left: 30px;
+  color: #000000;
+}
+
+.header .header-slider {
+  position: relative;
+}
+
+.header .header-slider .header-slider__item {
+  position: relative;
+  height: 100%;
+}
+
+.header .header-slider .header-slider__item .carousel-indicators {
+  z-index: 200;
+}
+
+.header .header-slider .header-slider__item .carousel-indicators .slider-button {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+.header .header-slider .header-slider__item .carousel-indicators .active {
+  background-color: #EEAB05;
+}
+
+.header .header-slider .header-slider__item .carousel-inner {
+  position: relative;
+}
+
+.header .header-slider .header-slider__item .carousel-inner .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  opacity: 0.851;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(left, black 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header .header-slider .header-slider__item .carousel-inner .carousel-caption {
+  z-index: 200;
+  position: absolute;
+  text-align: left;
+  padding: 0;
+  top: 148px;
+  left: 128px;
+}
+
+.header .header-slider .header-slider__item .carousel-inner .carousel-caption .carousel-title {
+  font-family: "Brother";
+  color: #FFFFFF;
+  font-size: 45px;
+  margin-bottom: 20px;
+  line-height: 1.067;
+}
+
+.header .header-slider .header-slider__item .carousel-inner .carousel-caption .carousel-description {
+  font-family: "Brother";
+  color: #FFFFFF;
+  font-size: 19px;
+  margin-bottom: 34px;
+  width: 500px;
+  line-height: 1.158;
+}
+
+.header .header-slider .header-slider__item .carousel-inner .carousel-caption .carousel-btn {
+  font-family: "Brother";
+  font-size: 16px;
+  line-height: 1.25;
+  width: 130px;
+  padding: 10px 0;
+  border-radius: 10px;
+  z-index: 100;
+  border: none;
+  background-color: #EEAB05;
+}
+
+.header .header-slider .header-slider__item .carousel-inner .slider-image {
+  height: 499px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px 130px;
+  background-color: #1D1D1D;
+}
+
+.footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-links__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-links__icon .nav-icon {
+  height: 20px;
+  padding-right: 21px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.footer .footer-links__icon .nav-icon:hover {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.footer .footer-links__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 0 25px;
+}
+
+.footer .footer-links__nav .nav-link {
+  font-size: 16px;
+  font-family: "Brother";
+  padding: 0 25px 0 0;
+  color: #FFFFFF;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .footer-links__nav .nav-link:hover {
+  color: #EEAB05;
+}
+
+.footer .footer-name {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Brother";
+}
+
+.footer .footer-name__span {
+  color: #EEAB05;
+}

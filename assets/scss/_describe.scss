@@ -1,0 +1,64 @@
+.description {
+    text-align: center;
+    height: 396px;
+
+    .description-title {
+        padding: 54px 0 45px 0;
+        font-size: 35px;
+        font-family: $font-Myriad;
+        color: $color-white;
+        line-height: 0.571;
+        text-align: center;
+        margin: 0;
+    }
+
+    .description-info {
+        padding: 0 295px 45px 280px;
+        font-size: 19px;
+        font-family: $font-Myriad;
+        color: $color-white;
+        line-height: 1.053;
+        text-align: center;
+    }
+
+    .description-counter {
+        display: flex;
+        padding: 0 198px 0 252px;
+
+        .marg {
+            padding: 0 196px 0 260px;
+        }
+
+        &__item {
+
+            .item-number {
+                padding: 0 0 11px 0;
+                font-size: 45px;
+                font-family: $font-Myriad;
+                color: $color-orange;
+                line-height: 0.667;
+                text-align: center;
+            }
+
+            .item-info {
+                padding: 0 0 33px 0;
+                font-size: 20px;
+                font-family: $font-Myriad;
+                color: $color-white;
+                line-height: 1.5;
+                text-align: center;
+            }
+        }
+    }
+
+    .description-btn {
+        padding: 8px 35px;
+        font-size: 16px;
+        font-family: $font-brother;
+        color: $color-black;
+        line-height: 1.25;
+        border: none;
+        border-radius: 5px;
+        background-color: $color-orange;
+    }
+}
