@@ -7,6 +7,8 @@ let secondNumber = document.querySelector('#secondNumber');
 let thirdNumber = document.querySelector('#thirdNumber');
 
 let number = 0;
+let number1 = 0;
+let number2 = 0;
 
 
 let btnClick = (e) => {
@@ -15,9 +17,9 @@ let btnClick = (e) => {
     if(target.classList.contains('first')) {
         firstNumber.innerHTML = `${++number}` ;
     } else if(target.classList.contains('second')) {
-        secondNumber.innerHTML = `${++number}` ;
+        secondNumber.innerHTML = `${++number1}` ;
     } else if(target.classList.contains('third')) {
-        thirdNumber.innerHTML = `${++number}` + '+' ;
+        thirdNumber.innerHTML = `${++number2}` + '+' ;
     }
 }
 
