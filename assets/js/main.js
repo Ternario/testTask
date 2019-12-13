@@ -6,9 +6,9 @@ let firstNumber = document.querySelector('#firstNumber');
 let secondNumber = document.querySelector('#secondNumber');
 let thirdNumber = document.querySelector('#thirdNumber');
 
-let number = 0;
-let number1 = 0;
-let number2 = 0;
+let number = 950000;
+let number1 = 296000;
+let number2 = 2000;
 
 
 let btnClick = (e) => {
